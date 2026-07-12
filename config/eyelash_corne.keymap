@@ -45,6 +45,93 @@
             bindings = <&kp ENTER>, <&kp LEFT_SHIFT>;
         };
 
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp C
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp V
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp X
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp Z
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp Y
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        select_all: select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp A
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        save: save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp S
+                &macro_release &kp LCTRL
+            >;
+        };
+
+        find: find {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_tap   &kp F
+                &macro_release &kp LCTRL
+            >;
+        };
 
         rsr_trans: rsr_trans {
             compatible = "zmk,behavior-runtime-sensor-rotate";
